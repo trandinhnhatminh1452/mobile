@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- Mã số sinh viên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã số sinh viên"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/edtMssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:hint="Nhập mã số sinh viên"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Họ tên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ tên"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/edtHoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:hint="Nhập họ tên"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6C5DD3"
+            android:paddingHorizontal="32dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#8B7FE8"
+            android:paddingHorizontal="24dp"/>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

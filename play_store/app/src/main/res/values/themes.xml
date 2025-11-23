@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.PlayStore" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#6C5DD3</item>
+        <item name="colorPrimaryDark">#5A4DB8</item>
+        <item name="colorAccent">#8B7FE8</item>
+    </style>
+
+    <style name="Theme.PlayStore" parent="Base.Theme.PlayStore" />
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <!-- Checkbox (hidden by default) -->
+    <ImageView
+        android:id="@+id/imgCheck"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/checkbox_on_background"
+        android:visibility="gone"
+        android:contentDescription="Selected"
+        app:tint="#1A73E8" />
+
+    <!-- Avatar Circle -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/tvAvatarLetter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="E"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Email Content -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Sender and Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvSender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edurila.com"
+                android:textColor="#202124"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:34 PM"
+                android:textColor="#5F6368"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Subject -->
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$19 Only (First 10 spots) - Bestselling..."
+            android:textColor="#202124"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Preview -->
+        <TextView
+            android:id="@+id/tvPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you looking to Learn Web Designin..."
+            android:textColor="#5F6368"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <!-- Star Icon -->
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/star_big_off"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Star"
+        app:tint="#5F6368" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp">
+
+    <!-- Section Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvSponsored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sponsored"
+            android:textColor="#5F6368"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•"
+            android:textColor="#5F6368"
+            android:textSize="12sp"
+            android:id="@+id/tvDot"
+            android:visibility="gone"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSectionTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Suggested for you"
+            android:textColor="#202124"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+
+        <ImageView
+            android:id="@+id/imgMore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_more"
+            android:tint="#5F6368"
+            android:visibility="gone"
+            android:contentDescription="More options"/>
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_media_play"
+            android:rotation="180"
+            android:tint="#01875F"
+            android:visibility="visible"
+            android:contentDescription="View all"/>
+    </LinearLayout>
+
+    <!-- Apps RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"/>
+
+</LinearLayout>
